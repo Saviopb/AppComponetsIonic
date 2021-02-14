@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>checkbox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Azeitona</ion-label>
+      <ion-checkbox [(ngModel)] ="azeitona" (ionChange)="updateAzeitona()"></ion-checkbox>
+    </ion-item>
+
+     <ion-item>
+      <ion-label>Martini</ion-label>
+      <ion-checkbox [(ngModel)] ="martini" (ionChange)="updateMartini()"></ion-checkbox>
+    </ion-item>
+
+     <ion-item>
+      <ion-label>Manhattan</ion-label>
+      <ion-checkbox [(ngModel)] ="manhattan" (ionChange)="updateManhattan()"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

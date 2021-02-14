@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+  <button ion-button menuToggle>
+    <ion-icon name="menu">
+    </ion-icon>
+  </button>
+
+  <ion-title>
+  Exemplos Componentes
+  </ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Pagina Home do projeto.
+  <p>Teste Navegação</p>
+  <br>
+  <button ion-button [navPush]="pushPage" [navParams]="params">
+    Principal com nav Push</button>
+    <br>
+  <button ion-button color="dark" (click)="novaPagina">Principal com NavController</button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-title>Rodapé</ion-title>
+  </ion-toolbar>
+</ion-footer>

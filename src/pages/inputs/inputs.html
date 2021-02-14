@@ -1,0 +1,25 @@
+<
+<ion-header>
+  <ion-navbar>
+    <ion-title>inputs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Usuário"  [(ngModel)]="campoLogin"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+     <ion-input type="password" placeholder="Senha" [(ngModel)] ="campoSenha"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="enviar(campoLogin, campoSenha)" outline>Enviar</button>
+
+  <p> {{campoLogin}} </p>
+  <p>{{mensagem}}</p>
+</ion-content>
